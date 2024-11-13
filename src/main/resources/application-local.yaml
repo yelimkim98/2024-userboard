@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://3.34.53.55:3306/test?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    username: yerimlocaltest
+    password: yerimlocaltest
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
