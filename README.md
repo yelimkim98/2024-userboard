@@ -31,6 +31,11 @@ java -jar -DRDS_PASSWORD=패스워드값 build/libs/*.jar
    ```bash
    docker run -e RDS_PASSWORD=패스워드값 -p 8080:8080 userboard:latest
    ```
+   
+5. (문제있을 경우) 컨테이너 로그 확인
+   ```bash
+   docker logs 컨테이너이름또는ID
+   ```
 
 ### Docker HUB 로부터 pull 받아서 컨테이너로 실행하기
 ```bash
