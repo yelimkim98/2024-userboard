@@ -34,5 +34,6 @@ java -jar -DRDS_PASSWORD=패스워드값 build/libs/*.jar
 
 ### Docker HUB 로부터 pull 받아서 컨테이너로 실행하기
 ```bash
-docker run -d -p 8080:8080 -e RDS_PASSWORD=패스워드값 kiel0103/2024-userboard:태그
+docker run -d -p 원하는포트:8080 -e RDS_PASSWORD=패스워드값 -e SPRING_PROFILE=prod kiel0103/2024-userboard:태그
 ```
+- SPRING_PROFILE 값은 local 또는 prod
