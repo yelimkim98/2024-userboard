@@ -1,0 +1,11 @@
+### User 생성
+POST http://localhost:8080/api/v1/user
+Content-Type: application/json
+
+{
+  "name": "yerimkim"
+}
+
+### User 전체 조회
+GET http://localhost:8080/api/v1/users
+Content-Type: application/json
